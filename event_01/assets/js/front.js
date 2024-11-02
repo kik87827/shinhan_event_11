@@ -105,7 +105,7 @@ class DesignPopup {
     this.design_popup_wrap_active = document.querySelectorAll(".popup_wrap.active");
     if (this.selector == null) { return; }
     if (this.touchstart) {
-      this.domHtml.classList.add("touchDis");
+      this.domBody.classList.add("touchDis");
     }
     this.selector.classList.add("active");
     setTimeout(() => {
@@ -162,7 +162,7 @@ class DesignPopup {
       
       
       if (this.design_popup_wrap_active.length == 1) {
-        this.domHtml.classList.remove("touchDis");
+        this.domBody.classList.remove("touchDis");
       }
     }
   }
