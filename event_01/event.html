@@ -305,7 +305,7 @@
 			</div>
         </div>
     </div>
-	<div class="popup_wrap" id="popup_already">
+	<!-- <div class="popup_wrap" id="popup_already">
         <div class="bg_dim"></div>
         <div class="popup_box_tb_wrap">
 			<div class="popup_box_tb">
@@ -331,7 +331,7 @@
 				</div>
 			</div>
         </div>
-    </div>
+    </div> -->
 	<div class="popup_wrap" id="popup_next">
         <div class="bg_dim"></div>
         <div class="popup_box_tb_wrap">
@@ -380,9 +380,9 @@
             let popup_end = new DesignPopup({
                 selector: "#popup_end"
             });
-            let popup_already = new DesignPopup({
+            /* let popup_already = new DesignPopup({
                 selector: "#popup_already"
-            });
+            }); */
             let popup_next = new DesignPopup({
                 selector: "#popup_next"
             });
@@ -436,7 +436,14 @@
 			}else if(url_2 === "end"){
 				popup_end.popupShow();
 			}else if(url_2 === "already"){
-				popup_already.popupShow();
+				// popup_already.popupShow();
+				designModal({
+                    message : "이미 이벤트에<br>참여하였습니다.",
+					modaltype : "confirm",
+                    okcallback(){
+                        console.log('okcallback');
+                    }
+                });
 			}else if(url_2 === "next"){
 				popup_next.popupShow();
 			}
