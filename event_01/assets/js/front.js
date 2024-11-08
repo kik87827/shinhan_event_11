@@ -260,7 +260,6 @@ function designModal(option) {
     });
   }
   if(!!btn_modal_close){
-    console.log(btn_modal_close);
     btn_modal_close.forEach((item)=>{
       let eventIs = false;
       if (eventIs) {

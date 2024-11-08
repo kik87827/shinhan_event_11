@@ -428,7 +428,11 @@ html:not(.touchmode) ::-webkit-scrollbar-track {
 .btn_modal_submit_text{color:#fff; font-size:42px;  font-family: 'OneShinhan';}
 .btn_modal_submit:last-of-type:after{display:none;}
 
-
+.btn_modal_close{position:absolute;top:28px;right:28px;width:36px;height:36px;}
+.btn_modal_close:before,
+.btn_modal_close:after{width:2px;height:40px;background:#4d4d4d;display:block;content:'';position:absolute;top:50%;left:50%;margin:-20px 0 0 -1px;}
+.btn_modal_close:before{transform: rotate(45deg);}
+.btn_modal_close:after{transform: rotate(-45deg);}
 
 @media (max-width:750px){
     /*  */
@@ -675,13 +679,18 @@ html:not(.touchmode) ::-webkit-scrollbar-track {
       padding: 20px;
     }
     
-    .modal_box_message_row{padding:30px 40px;}
+    .modal_box_message_row{padding:30px 40px 28px;}
     .modal_box_message{font-size:21px;}
     
     
     .btn_modal_submit{min-height:56px;}
     .btn_modal_submit:after{height:18px;}
     .btn_modal_submit_text{font-size:18px;}
+
+      
+  .btn_modal_close{top:12px;right:12px;width:20px;height:20px;}
+  .btn_modal_close:before,
+  .btn_modal_close:after{width:2px;height:20px;margin:-10px 0 0 -1px;}
  
 
     .popup_card_container:before{height:5.333vw;}
