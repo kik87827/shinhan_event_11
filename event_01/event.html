@@ -171,16 +171,18 @@
 								<div class="deco_message_wrap">
 									<p class="deco_message">당첨을 축하드립니다.</p>
 								</div>
+								<p class="popup_message_sub_para">경품발송을 위해 14일이내 개별 연락예정입니다</p>
 								<div class="popup_product_row">
 									<img src="./assets/images/popup_class_pro_01.png" alt="">
 								</div>
 								<div class="popup_coment_row">
-									<p class="coment_para">이벤트를 공유하시면 캡슐 뽑기 기회를 <br>한 번 더 드립니다 (1일 최대 3회)</p>
+									<p class="coment_para">이벤트를 공유하면 참여 기회를 <br>한 번 더! 드립니다 (1일 최대 3회)</p>
 								</div>
 								<div class="popup_snsbox_row type2">
 									<a href="#" class="btn_snsbox small"><i class="ico shape_kakao"></i><span class="btn_snsbox_text">카카오톡 공유하기 &gt;</span></a>
 								</div>
 							</div>
+							<a href="javascript:;" class="btn_popup_close"><span class="hdtext">팝업 닫기</span></a>
 						</div>
 					</div>
 				</div>
@@ -201,16 +203,18 @@
 								<div class="deco_message_wrap">
 									<p class="deco_message">당첨을 축하드립니다.</p>
 								</div>
-								<div class="popup_product_row type2">
+								<p class="popup_message_sub_para">경품발송을 위해 14일이내 개별 연락예정입니다</p>
+								<div class="popup_product_row">
 									<img src="./assets/images/popup_class_pro_02.png" alt="">
 								</div>
 								<div class="popup_coment_row">
-									<p class="coment_para">이벤트를 공유하시면 캡슐 뽑기 기회를 <br>한 번 더 드립니다 (1일 최대 3회)</p>
+									<p class="coment_para">이벤트를 공유하면 참여 기회를 <br>한 번 더! 드립니다 (1일 최대 3회)</p>
 								</div>
 								<div class="popup_snsbox_row type2">
 									<a href="#" class="btn_snsbox small"><i class="ico shape_kakao"></i><span class="btn_snsbox_text">카카오톡 공유하기 &gt;</span></a>
 								</div>
 							</div>
+							<a href="javascript:;" class="btn_popup_close"><span class="hdtext">팝업 닫기</span></a>
 						</div>
 					</div>
 				</div>
@@ -231,16 +235,18 @@
 								<div class="deco_message_wrap">
 									<p class="deco_message">당첨을 축하드립니다.</p>
 								</div>
-								<div class="popup_product_row type2">
+								<p class="popup_message_sub_para">경품발송을 위해 14일이내 개별 연락예정입니다</p>
+								<div class="popup_product_row">
 									<img src="./assets/images/popup_class_pro_03.png" alt="">
 								</div>
 								<div class="popup_coment_row">
-									<p class="coment_para">이벤트를 공유하시면 캡슐 뽑기 기회를 <br>한 번 더 드립니다 (1일 최대 3회)</p>
+									<p class="coment_para">이벤트를 공유하면 참여 기회를 <br>한 번 더! 드립니다 (1일 최대 3회)</p>
 								</div>
 								<div class="popup_snsbox_row type2">
 									<a href="#" class="btn_snsbox small"><i class="ico shape_kakao"></i><span class="btn_snsbox_text">카카오톡 공유하기 &gt;</span></a>
 								</div>
 							</div>
+							<a href="javascript:;" class="btn_popup_close"><span class="hdtext">팝업 닫기</span></a>
 						</div>
 					</div>
 				</div>
@@ -261,16 +267,18 @@
 								<div class="deco_message_wrap">
 									<p class="deco_message">당첨을 축하드립니다.</p>
 								</div>
+								<p class="popup_message_sub_para">경품발송을 위해 14일이내 개별 연락예정입니다</p>
 								<div class="popup_product_row type2">
 									<img src="./assets/images/popup_class_pro_04.png" alt="">
 								</div>
 								<div class="popup_coment_row">
-									<p class="coment_para">이벤트를 공유하시면 캡슐 뽑기 기회를 <br>한 번 더 드립니다 (1일 최대 3회)</p>
+									<p class="coment_para">이벤트를 공유하면 참여 기회를 <br>한 번 더! 드립니다 (1일 최대 3회)</p>
 								</div>
 								<div class="popup_snsbox_row type2">
 									<a href="#" class="btn_snsbox small"><i class="ico shape_kakao"></i><span class="btn_snsbox_text">카카오톡 공유하기 &gt;</span></a>
 								</div>
 							</div>
+							<a href="javascript:;" class="btn_popup_close"><span class="hdtext">팝업 닫기</span></a>
 						</div>
 					</div>
 				</div>
@@ -436,7 +444,8 @@
 			}else if(url_2 === "end"){
 				popup_end.popupShow();
 			}else if(url_2 === "already"){
-				// popup_already.popupShow();
+				popup_already.popupShow();
+			}else if(url_2 === "already_modal"){
 				designModal({
                     message : "이미 이벤트에<br>참여하였습니다.",
                     okcallback(){
