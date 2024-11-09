@@ -299,9 +299,8 @@
 								<div class="popup_multi_product_row">
 									<img src="./assets/images/popup_end_img.png" alt="">
 								</div>
-								<div class="popup_sub_message_group">
-									<p class="ps_message">카카오톡 공유하시면 <br>캡슐 뽑기 기회를 한 번 더 드립니다</p>
-									<p class="ps_message emp">매일 새로운 기회가 주어지니 <br>내일 또 다시 참여해주세요</p>
+								<div class="popup_coment_row">
+									<p class="coment_para">매일 참여가능!<br>내일 또 다시 참여해주세요!</p>
 								</div>
 								<div class="btn_pcard_row">
 									<a href="#" class="btn_pcard"><span class="btn_pcard_text">내일 다시 참여하기 &gt;</span></a>
@@ -313,7 +312,7 @@
 			</div>
         </div>
     </div>
-	<!-- <div class="popup_wrap" id="popup_already">
+	<div class="popup_wrap" id="popup_already">
         <div class="bg_dim"></div>
         <div class="popup_box_tb_wrap">
 			<div class="popup_box_tb">
@@ -321,14 +320,14 @@
 					<div class="popup_card_container">
 						<div class="popup_card_box">
 							<div class="popup_card_inner">
-								<div class="popup_flag_row type2">
-									<img src="./assets/images/popup_message_thanks.png" alt="">
-								</div>
-								<div class="popup_main_message_row type3">
-									<p class="popup_main_message">이미 이벤트에 <br>참여하셨습니다</p>
+								<div class="popup_main_message_row type4">
+									<p class="popup_main_message">이벤트에 <br>참여하셨습니다</p>
 								</div>
 								<div class="popup_multi_product_row">
-									<img src="./assets/images/popup_thanks_img.png" alt="">
+									<img src="./assets/images/popup_end_img.png" alt="">
+								</div>
+								<div class="popup_coment_row">
+									<p class="coment_para">이벤트를 공유하면 참여 기회를 <br>한 번 더! 드립니다 (1일 최대 3회)</p>
 								</div>
 								<div class="popup_snsbox_row">
 									<a href="#" class="btn_snsbox small"><i class="ico shape_kakao"></i><span class="btn_snsbox_text">카카오톡 공유하기 &gt;</span></a>
@@ -339,7 +338,7 @@
 				</div>
 			</div>
         </div>
-    </div> -->
+    </div>
 	<div class="popup_wrap" id="popup_next">
         <div class="bg_dim"></div>
         <div class="popup_box_tb_wrap">
@@ -349,19 +348,45 @@
 						<div class="popup_card_box">
 							<div class="popup_card_inner">
 								<div class="popup_flag_row type2">
-									<img src="./assets/images/popup_message_next.png" alt="">
+									<img src="./assets/images/popup_message_aa.png" alt="">
 								</div>
 								<div class="popup_main_message_row type2">
-									<p class="popup_main_message">아래 이미지를 클릭하시면 <br>운세보기로 이동합니다</p>
+									<p class="popup_main_message">오늘의 운세를 확인해보세요</p>
 								</div>
 								<div class="popup_product2_row">
-									<img src="./assets/images/popup_next_img.png" alt="">
+									<img src="./assets/images/popup_unse.png" alt="">
 								</div>
-								<div class="popup_summary_para_row"><p class="popup_summary_para">이벤트를 공유하시면 캡슐 뽑기 기회를 <br>한 번 더 드립니다 (1일 최대 3회)</p></div>
+								<div class="popup_summary_para_row"><p class="popup_summary_para">이벤트를 공유하면 참여 기회를 <br>한 번 더! 드립니다 (1일 최대 3회)</p></div>
 								<div class="popup_snsbox_row">
 									<a href="#" class="btn_snsbox small"><i class="ico shape_kakao"></i><span class="btn_snsbox_text">카카오톡 공유하기 &gt;</span></a>
 								</div>
 							</div>
+							<a href="javascript:;" class="btn_popup_close"><span class="hdtext">팝업 닫기</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </div>
+	<div class="popup_wrap" id="popup_last">
+        <div class="bg_dim"></div>
+        <div class="popup_box_tb_wrap">
+			<div class="popup_box_tb">
+				<div class="popup_box_td">
+					<div class="popup_card_container">
+						<div class="popup_card_box">
+							<div class="popup_card_inner">
+								<div class="popup_main_message_row type4">
+									<p class="popup_main_message">이미 이벤트에 <br>참여하셨습니다</p>
+								</div>
+								<div class="popup_multi_product_row">
+									<img src="./assets/images/popup_end_img.png" alt="">
+								</div>
+							</div>
+							<div class="popup_bottom_btn_row">
+								<a href="javascript:;" class="btn_popup_bottom"><span class="btn_popup_bottom_text">확인</span></a>
+							</div>
+							<a href="javascript:;" class="btn_popup_close"><span class="hdtext">팝업 닫기</span></a>
 						</div>
 					</div>
 				</div>
@@ -388,11 +413,14 @@
             let popup_end = new DesignPopup({
                 selector: "#popup_end"
             });
-            /* let popup_already = new DesignPopup({
+             let popup_already = new DesignPopup({
                 selector: "#popup_already"
-            }); */
+            });
             let popup_next = new DesignPopup({
                 selector: "#popup_next"
+            });
+            let popup_last = new DesignPopup({
+                selector: "#popup_last"
             });
 
 			// event
@@ -454,6 +482,8 @@
                 });
 			}else if(url_2 === "next"){
 				popup_next.popupShow();
+			}else if(url_2 === "last"){
+				popup_last.popupShow();
 			}
         });
 	</script>
